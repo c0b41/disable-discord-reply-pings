@@ -1,0 +1,13 @@
+{
+  "name": "Disable Discord Reply",
+  "description": "Disable discord reply pings.",
+  "version": "1.0",
+  "icons": { "16": "discord16.png", "48": "discord48.png", "128": "discord128.png" },
+  "content_scripts": [
+    {
+      "matches": ["https://discord.com/*"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "manifest_version": 2
+}
